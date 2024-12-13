@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title id="motd">trurune.org</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	<body>
+		<center>
+		<div class="content">
+			<h1>Welcome to trurune.org!</h1>
+			<p>I'm a Linux user, IT person, server administrator and programmer ₍^. .^₎⟆</p>
+			<marquee id="motd-scroll" behavior="scroll" direction="left">Here is some scrolling text... right to left!</marquee>
+
+			<script>
+				var messages = ["slaying since 2024", "using linux since 2022", "slay or i'll shoot you with a ray", "you wouldn't download a car (i mean, i would if i could)", "wait, people actually read these?", "day by day, i wake up to slay"]
+				var index = Math.floor(Math.random() * messages.length)
+				document.getElementById("motd").innerHTML = messages[index]
+				document.getElementById("motd-scroll").innerHTML = messages[index]
+			</script>
+			<a href="blog/aaaaa.html">
+			<div class="blog-post">
+				<h2>The Raspberry Pi Compute Module 5 Dev Kit</h1>
+				<p>13.12.24</p>
+				<img src="https://thepihut.com/cdn/shop/files/raspberry-pi-compute-module-5-development-kit-raspberry-pi-72265541779841_700x.jpg?v=1732591020" height=120 width=192>
+		</div>
+			</a>
+		</center>
+	</body>
+</html>
